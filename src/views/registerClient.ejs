@@ -1,0 +1,90 @@
+<%- include('includes/header') %>
+<%- include('includes/navbar') %>
+
+<main role="main">
+    <section>
+        <div class="container">
+            <h1 class="pt-5">Cadastrar Cliente</h1>
+
+            <form action="/receivedata" method="post" class="pt-3 formulario">
+                
+                <div class="row pt-5 mb-4">
+                    <div class="col-md-4 mb-3">
+                        <input type="text" class="form-control" placeholder="Série*" name="serie">
+
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <input type="text" class="form-control" placeholder="Nome*" name="nome">
+                        
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <input type="text" class="form-control" placeholder="Apelido*" name="apelido">
+                        
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <input type="date" class="form-control" placeholder="Data de Nascimento*" name="data_de_nascimento" >
+                        
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <input type="text" class="form-control" placeholder="Idade*" name="idade" >
+                        
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <select class="form-control" aria-placeholder="escolha" name="genero" id="">
+                            <option disabled value="Escolha*">Escolha</option>
+                            <option value="Masculino">Masculino</option>
+                            <option value="Feminino">Feminino</option>
+                        </select>
+                        
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <input type="text" class="form-control" placeholder="Residência*" name="residencia">
+                        
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <input type="text" class="form-control" placeholder="Ocupação*" name="ocupacao">
+                        
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <input type="text" value="+258 " class="form-control" placeholder="Contacto" name="contacto">
+                        
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <input type="text" class="form-control" placeholder="AV/SC*" name="av_sc">
+                        
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <input type="text" class="form-control" placeholder="Prescrição*" name="prescricao">
+                        
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <input type="text" class="form-control" placeholder="R.X*" name="r_x">
+                        
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <input type="text" class="form-control" placeholder="Tipo de Tratamento*" name="tipo_de_tratamento">
+                        
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <input type="text" class="form-control" placeholder="Pagamento" name="pagamento">
+                        
+                    </div>
+                </div>
+
+                <div class="button-Send">
+                    <button class="btn btn-success" type="submit">Cadastrar</button>
+                </div>
+
+            </form>
+        </div>
+    </section>
+</main>
+
+
+<%- include('includes/footer') %>
